@@ -1,0 +1,13 @@
+{
+  "_说明": "示例任务的路径清单。复制这个文件夹做你自己的第一篇；改文件名要同步改这里。",
+  "定位": "示例",
+  "slug": "demo",
+  "标题": "示例图文组",
+  "htmlTitle": "示例 · 小红书图文组",
+  "源目录": ".",
+  "posters": "posters.html",
+  "index": "index.html",
+  "outputDir": "图",
+  "outputPrefix": "demo",
+  "卡片数": 2
+}

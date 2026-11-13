@@ -1,0 +1,62 @@
+<!-- ============================================================
+     示例：2 页最小图文组（封面 + 内容页）
+     用法：cd 到本文件夹，跑
+       python3 ../../scripts/pipeline/build.py
+       node    ../../scripts/pipeline/render.mjs
+     出来的图在 图/ 里。
+     把「你的账号名」换成你的（或先跑 scripts/init-brand.py 一键初始化）。
+     ============================================================ -->
+
+<section class="poster xhs" id="xhs-01">
+  <div class="paper-wash"></div>
+  <div class="grain"></div>
+  <div class="content stack xk-cover">
+    <p class="kicker">示例 · 封面</p>
+    <div class="xk-cover-mid">
+      <h1 class="h-display">你的标题<br>放这里</h1>
+      <p class="xk-cover-zh">一句话定性句</p>
+    </div>
+    <div class="xk-cover-bot">
+      <hr class="rule-accent">
+      <p class="lead xk-cover-lead">封面导语写在这里。把读者最想知道的好处放进第一屏——五秒内让他知道看完能得到什么。</p>
+      <div class="xk-cover-foot">
+        <span>左徽记</span>
+        <span>右徽记</span>
+      </div>
+    </div>
+  </div>
+  <div class="sig-strip">
+    <span class="sig-brand"><img src="../../assets/cat-badge.png" alt=""/>你的账号名</span>
+    <span class="sig-page">{{PAGE}}</span>
+  </div>
+</section>
+
+<section class="poster xhs" id="xhs-02">
+  <div class="paper-wash"></div>
+  <div class="grain"></div>
+  <div class="content stack gap-1">
+    <p class="kicker">示例 · 内容页</p>
+    <h2 class="h-xl">一页讲一件事<br>标题要短</h2>
+    <p class="lead">正文用完整句子写，别堆名词。每页 120–180 字，模块化「短标题 + 完整说明」。</p>
+    <div class="xk-stats">
+      <div class="cell"><div class="big">1080</div><div class="lbl">像素宽</div></div>
+      <div class="cell"><div class="big">1440</div><div class="lbl">像素高</div></div>
+      <div class="cell"><div class="big">3:4</div><div class="lbl">画布比例</div></div>
+    </div>
+    <div class="xk-toc">
+      <div class="toc-row"><span class="toc-nb">01</span><span class="toc-tx">目录行一：这一页讲什么，一句话</span></div>
+      <div class="toc-row"><span class="toc-nb">02</span><span class="toc-tx">目录行二：再补一个信息点</span></div>
+      <div class="toc-row"><span class="toc-nb">03</span><span class="toc-tx">目录行三：让页面有足够的信息密度</span></div>
+      <div class="toc-row"><span class="toc-nb">04</span><span class="toc-tx">目录行四：真实做图时这里放你的内容</span></div>
+    </div>
+    <p class="xk-note">这一行是小字备注，用来放补充信息或引用出处。</p>
+    <div class="callout">
+      这是强调框，用来放一句最想让读者记住的判断。密度低于 75% 时，render 会提示改版——多写一页真信息，别留白。
+      <span class="callout-src">来源标注</span>
+    </div>
+  </div>
+  <div class="sig-strip">
+    <span class="sig-brand"><img src="../../assets/cat-badge.png" alt=""/>你的账号名</span>
+    <span class="sig-page">{{PAGE}}</span>
+  </div>
+</section>

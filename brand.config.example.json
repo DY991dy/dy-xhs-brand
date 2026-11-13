@@ -1,0 +1,5 @@
+{
+  "handle": "你的账号名",
+  "avatar": "assets/cat-badge.png",
+  "note": "复制本文件为 brand.config.json，或直接跑 scripts/init-brand.py --handle \"你的账号名\" --avatar 你的logo.png 自动生成。签名条文字必须来自 handle。"
+}
